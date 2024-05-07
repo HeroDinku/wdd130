@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS Variables for easy theme management */
+:root {
+    --primary-color: #396e94;   /* Dark blue */
+    --secondary-color: #e7c24f; /* Gold */
+    --accent1-color: #a43312;   /* Dark red */
+    --accent2-color: #381d2a;   /* Deep maroon */
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --nav-bg-color: #396e94;    /* Dark blue, same as primary */
+    --nav-link-color: #ffffff;  /* White */
+    --nav-hover-bg-color: #285673; /* Darker blue */
+    --nav-hover-link-color: #ffff00; /* Bright yellow */
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow for depth */
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--nav-hover-bg-color);
+    color: var(--nav-hover-link-color);
+}
+
+main {
+    background-color: #ffffff; /* White background for main content area */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the main content area */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Shadow for 3D effect */
+}
+
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    display: block; /* Remove bottom space/gap */
+    margin: 0 auto 20px; /* Centering images and adding space below */
+}
+
+footer {
+    background-color: var(--accent2-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6; /* Enhance readability */
+}
+
+/* Utility classes for additional styling */
+.text-center {
+    text-align: center;
+}
