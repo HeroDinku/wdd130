@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* CSS Variables for easy theme management */
+
 :root {
     --primary-color: #396e94;   /* Dark blue */
     --secondary-color: #e7c24f; /* Gold */

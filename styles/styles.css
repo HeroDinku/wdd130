@@ -1,36 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header, nav, main, aside, footer {
-    padding: 10px;
-    margin: 10px;
-}
-
-nav a {
-    margin-right: 10px;
-}
-
-main img, aside img {
-    width: 200px;
-    height: auto;
-}
-
-aside {
-    width: 300px;
-    margin: 20px auto;
+/* Box Class */
+.box {
+    margin: 1rem;
+    padding: 1rem;
     border: 1px solid #ccc;
-    padding: 10px;
     background-color: #f9f9f9;
     color: #333;
 }
 
-p {
-    padding: 0;
+/* Positioning for Aside and Overlay */
+aside {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 
-footer {
-    margin-top: 20px;
-    border-top: 1px solid #ccc;
-    text-align: center;
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
 }
+
+/* Enhancements for Navigation Bar */
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Adding Comments at the bottom of the CSS file */
+/* Class Selectors */
+/* Additional styles would be added here as needed */
