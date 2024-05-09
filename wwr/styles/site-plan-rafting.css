@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
 :root {
     --primary-color: #396e94;   /* Dark blue */
     --secondary-color: #e7c24f; /* Gold */
@@ -78,4 +79,9 @@ footer {
 
 p {
     line-height: 1.6; /* Enhance readability */
+}
+
+/* Utility classes for additional styling */
+.text-center {
+    text-align: center;
 }
