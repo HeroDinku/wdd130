@@ -3,15 +3,79 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Consistent font across the site */
 }
 
-/* Box Class */
+/* Enhancements for Navigation Bar */
+nav {
+    background-color: #333; /* Darker bar for better contrast */
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    margin: 0 10px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #fff; /* White text for better readability */
+    background-color: #007BFF; /* Stylish blue background */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+/* Profile image styling */
+.profile-image {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Paragraph styling within main */
+.profile-section p {
+    margin: 20px 0;
+    color: #666; /* Softer text color for less strain */
+    text-align: justify; /* Improved text alignment */
+}
+
+/* Box Class Styling */
 .box {
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd; /* Lighter border color */
     background-color: #f9f9f9;
     color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Consistent shadow effect */
+}
+
+/* Styling for lists within .box */
+.box ul {
+    padding: 0;
+}
+
+.box li {
+    list-style-type: none; /* Removing bullets */
+}
+
+.box li a {
+    color: #007BFF; /* Link color match with nav */
+    text-decoration: none;
+}
+
+.box li a:hover {
+    text-decoration: underline; /* Underline on hover for links */
 }
 
 /* Positioning for Aside and Overlay */
@@ -19,24 +83,25 @@ aside {
     position: relative;
     padding: 1rem;
     margin: 1rem 0;
+    background-color: #fff; /* Light background for the aside */
+    border-left: 5px solid #007BFF; /* Accent border on the left */
 }
 
 aside h2 {
     position: absolute;
     top: 10px;
-    left: 10px;
-    color: white;
-    background-color: rgba(0,0,0,0.5);
-    padding: 5px;
+    left: 15px;
+    color: #fff;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners for the title */
 }
 
-/* Enhancements for Navigation Bar */
-nav a {
-    margin-right: 10px;
-    text-decoration: none;
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f2f2f2;
     color: #333;
+    border-top: 1px solid #ccc;
 }
-
-/* Adding Comments at the bottom of the CSS file */
-/* Class Selectors */
-/* Additional styles would be added here as needed */
