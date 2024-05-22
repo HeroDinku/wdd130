@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #0055a4;
-    --secondary-color: #ffd700;
+    --secondary-color: hsl(50, 12%, 10%);
     --background-color: #f0f0f0;
     --text-color: #333;
 }
@@ -19,27 +19,35 @@ body {
     background-color: var(--background-color);
 }
 
-header img {
-    height: 80px;
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
+header img {
+    height: 80px;
+}
+
 nav {
-    background-color: var(--primary-color);
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
     color: var(--secondary-color);
     text-decoration: none;
-    margin: 0 15px;
+    padding: 10px;
+    background-color: var(--primary-color);
 }
 
 .hero {
-    position: relative;
     text-align: center;
     color: var(--secondary-color);
+    background-color: #d3d3d3;
+    padding: 20px;
 }
 
 .hero img {
@@ -48,26 +56,71 @@ nav a {
 }
 
 .hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 2.5rem;
 }
 
-article img {
-    float: right;
+.hero article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero article img {
     margin-left: 20px;
     width: 250px;
 }
 
-footer {
+.history {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+}
+
+.history-content img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.adventures {
+    padding: 20px;
+}
+
+.adventure-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.adventure-images figure {
+    width: 18%;
     text-align: center;
+}
+
+.adventure-images img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
-footer a img {
+footer .social-media {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .social-media a img {
     width: 40px;
+    margin-left: 10px;
 }

@@ -14,7 +14,7 @@ nav {
 
 nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* Ensuring no text-decoration */
     padding: 0.5rem 1rem;
 }
 
@@ -41,16 +41,16 @@ main {
 
 h1 {
     color: #333;
+    border-bottom: 2px solid #ccc; /* Adding a bottom border to the h1 element */
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #f2f2f2; /* Light gray background */
-    color: #333; /* Dark text color */
-    border-top: 1px solid #ccc; /* Adds a subtle border to the top of the footer */
+    background-color: #f2f2f2;
+    color: #333;
+    border-top: 1px solid #ccc;
 }
-
 
 img {
     max-width: 100%;
@@ -66,5 +66,5 @@ ul.box {
 
 ul.box li a {
     color: blue;
-    text-decoration: none;
+    text-decoration: none; /* Ensuring no text-decoration */
 }
