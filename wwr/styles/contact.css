@@ -1,0 +1,112 @@
+:root {
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --primary-color: #007bff;
+    --secondary-color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.contact-info {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.contact-info address {
+    margin: 20px 0;
+}
+
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.employee-profiles {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profiles figure {
+    width: 30%;
+    text-align: center;
+}
+
+.profiles img {
+    width: 100%;
+}
+
+.contact-form {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--text-color);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.contact-form div {
+    text-align: left;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
