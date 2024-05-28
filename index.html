@@ -1,42 +1,81 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asmamaw Yesgat Dinku | WDD 130</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Home | Dry Oar Rafting</title>
+    <meta name="description" content="Experience thrilling whitewater rafting adventures with Dry Oar Rafting. Book your trip today!">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="logo.png" alt="Dry Oar Rafting Logo">
+        </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Rafting Website</a>
-            <a href="#">Siteplan</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
-    <div class="grid">
-        <aside>
-            <h2>Virgina</h2>
-            <img src="images/virginia.jpg" alt="Machu Picchu" width="200">
-            <p>Virginia, is rich in both history and natural beauty. Located in the Southeastern region of the United States, it boasts a varied landscape that stretches from the Atlantic Ocean to the Appalachian Mountains.Today, Virginia's economy thrives on a diverse mix of technology, government services, and education, with a strong presence of federal agencies due to its proximity to Washington D.C.</p>
-        </aside>
-        <main>
-            <h1> Asmamaw Yesgat Dinku| WDD 130</h1>
-            <img src="images/profile.jpg" alt="Profile Photo" style="float:right; width:200px;">
-            <p>Hello and welcome! My name is Asmamaw Dinku, and I hail from the beautiful state of Virginia. I have a profound passion for exploring new places, which has taken me on numerous adventures both locally and internationally. My love for travel pairs well with my enthusiasm for hiking—there's nothing quite like the serenity and challenge of traversing through nature's wonders.
-            <ul class="box">
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/washington-d.c.-temple?lang=eng" target="_blank">Washington D.C. Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/provo-city-center-temple?lang=eng" target="_blank">Provo City Center Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/rome-italy-temple?lang=eng" target="_blank">Rome Italy Temple</a></li>
+    <main>
+        <section class="hero">
+            <img src="hero-image.jpg" alt="Rafting Adventure">
+            <div class="hero-content">
+                <h1>Have An Adventure</h1>
+                <p>Make Memories with Dry Oar</p>
+                <a href="trips.html" class="btn">Book Now</a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <img src="river.jpg" alt="Rivers">
+                <h2>Rivers</h2>
+            </div>
+            <div class="feature">
+                <img src="camping.jpg" alt="Camping">
+                <h2>Camping</h2>
+            </div>
+            <div class="feature">
+                <img src="rapids.jpg" alt="Rapids">
+                <h2>Rapids</h2>
+            </div>
+        </section>
+        <section class="more-info">
+            <img src="mountains.jpg" alt="Scenic View">
+            <div class="info-content">
+                <h2>More Than Just The Thrill</h2>
+                <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
+                <a href="about.html" class="btn">Join Us</a>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 20XX Dry Oar Rafting - Your First and Last Name Here</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Site Plan</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-        </main>
-    </div>
-    
-        <footer>
-            <p>&copy; 2024 Asmamaw Yesgat Dinku | Fairfax, VA</p>
-        </footer>
-        
+        </nav>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
 </body>
 </html>
