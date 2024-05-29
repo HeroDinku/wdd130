@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with us for more information or to book a trip.">
+    <meta name="description" content="Contact [Company Name] for inquiries, reservations, and suggestions.">
     <title>Contact Us - Asme Travel</title>
     <link rel="stylesheet" href="styles/contact.css">
 </head>
@@ -11,54 +11,67 @@
     <header>
         <nav>
             <ul>
-                <li class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="Asme Travel Logo">
-                    </a>
-                </li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Contact Us</h1>
-        <form class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-        <section class="map">
-            <h2>Our Location</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.1534773651515!2d-77.3613522846532!3d38.95863027956502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64e5f67f5057d%3A0x3a56bfa8f98d3ba4!2sReston%2C%20VA!5e0!3m2!1sen!2sus!4v1624195275913!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section class="company-info">
+            <h2>Our Contact Information</h2>
+            <p>Address: 123 Tysons Corner, Adventure City, VA 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@raftingcompany.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.9483719390637!2d-77.22960528465355!3d38.918781279569585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64a320bf9dd35%3A0xe25bd2d7628b9d27!2sTysons%20Corner%2C%20VA%2022192%2C%20USA!5e0!3m2!1sen!2sus!4v1685030814349!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
-        <section class="content">
-            <h2>Reach Out</h2>
-            <p>Phone: (800) 123-4567</p>
-            <p>Email: info@asmetravel.com</p>
-            <p>Address: 2316-2326 Soapstone Dr, Reston, VA 20191</p>
-       
+        <section class="employees">
+            <h2>Our Team</h2>
+            <div class="employee">
+                <img src="images/profile.jpg" alt="Employee 1">
+                <p>Asmamaw Dinku, Guide</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <p>Jane Smith, Customer Service</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <p>Jim Brown, Operations Manager</p>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="purpose">Purpose:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation" required> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion" required> Website Suggestion</label>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>Asme Travel © 2024 - Asmamaw Yesgat Dinku</p>
-        <nav>
-            <ul>
-                <li><a href="siteplan.html">Site Plan</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="social">
-            <a href="https://www.facebook.com/"><img src="images/facebook-icon.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="images/instagram-icon.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/"><img src="images/linkiedin-icon.png" alt="LinkedIn"></a>
-        </div>
+        <p>&copy; 2024 Asme Travel . All rights reserved.</p>
+        <p><a href="wireframe.png">View Wireframe</a></p>
     </footer>
 </body>
 </html>
