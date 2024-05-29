@@ -1,126 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-:root {
-    --primary-color: #0055a4;
-    --secondary-color: hsl(50, 12%, 10%);
-    --background-color: #f0f0f0;
-    --text-color: #333;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
-
+/* Header navigation styles */
 header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    background-color: var(--primary-color);
-    padding: 10px;
+    background-color: #336699;
 }
 
-header img {
-    height: 80px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    padding: 10px;
-    background-color: var(--primary-color);
-}
-
-.hero {
-    text-align: center;
-    color: var(--secondary-color);
-    background-color: #d3d3d3;
-    padding: 20px;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-}
-
-.hero article {
+nav ul {
     display: flex;
     justify-content: center;
-    align-items: center;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Styles for the rest of the contact page */
+.company-info, .employees, .contact-form {
+    margin: 20px;
     padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
-.hero article img {
-    margin-left: 20px;
-    width: 250px;
+.company-info h2, .employees h2, .contact-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-.history {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 20px;
-}
-
-.history-content {
-    display: flex;
-    align-items: center;
-}
-
-.history-content img {
-    width: 200px;
-    margin-right: 20px;
-}
-
-.adventures {
-    padding: 20px;
-}
-
-.adventure-images {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.adventure-images figure {
-    width: 18%;
-    text-align: center;
-}
-
-.adventure-images img {
+.map iframe {
     width: 100%;
+    height: 300px;
 }
 
-footer {
+.employee {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.employee img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.contact-form form {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    flex-direction: column;
 }
 
-footer .social-media {
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
 }
 
-footer .social-media a img {
-    width: 40px;
-    margin-left: 10px;
+.radio-group label {
+    margin: 5px 0;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Ensure there are no color contrast issues */
+body, input, textarea {
+    color: #333;
+    background-color: #fff;
 }
